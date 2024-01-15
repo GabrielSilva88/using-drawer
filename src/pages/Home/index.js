@@ -7,7 +7,7 @@ export default function Home() {
   const navigation = useNavigation();
 
   function navegaSobre() {
-    navigation.navigate('Sobre', { nome: 'Gonçalves da Silva', email: 'gabrielmiguel17@yahoo.com.br' })
+    navigation.navigate('Sobre')
   }
   return (
     <View style={styles.container}>
