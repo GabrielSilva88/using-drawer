@@ -4,13 +4,17 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 export default function Home() {
-    const navigation = useNavigation();
-    return (
+  const navigation = useNavigation();
+
+  function navegaSobre() {
+    navigation.navigate('Sobre', { nome: 'Gonçalves da Silva', email: 'gabrielmiguel17@yahoo.com.br' })
+  }
+  return (
     <View style={styles.container}>
       <Text>Tela Home</Text>
-      <Button 
+      <Button
         title='Ir para sobre'
-        onPress={()=> navigation.navigate('Sobre')}
+        onPress={navegaSobre}
       />
     </View>
   );
