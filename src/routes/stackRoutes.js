@@ -19,5 +19,5 @@ export default function StackRoutes() {
                 component={Detalhes}
             />
         </Stack.Navigator>
-    )
+    );
 }

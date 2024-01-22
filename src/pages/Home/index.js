@@ -1,3 +1,7 @@
+/**
+ *      Construção seção 7 Udemy 
+*/
+
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 
@@ -9,6 +13,7 @@ export default function Home() {
   function navegaDetalhes() {
     navigation.navigate('Detalhes')
   }
+
   return (
     <View style={styles.container}>
       <Text>Tela Home</Text>
@@ -16,6 +21,9 @@ export default function Home() {
         title='Ir para Detalhes'
         onPress={navegaDetalhes}
       />
+      <Button
+        title='Abrir Drawer'
+        onPress={() => navigation.openDrawer()} />
     </View>
   );
 }
@@ -23,7 +31,7 @@ export default function Home() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#FF0000',
     alignItems: 'center',
     justifyContent: 'center',
   },
